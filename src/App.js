@@ -55,7 +55,10 @@ function App() {
         >
           Stop
         </button>
-        <button type="button" onClick={() => setTimer(0)}>
+        <button type="button" onClick={() => {
+          setTimerOn(true);
+          setTimer(0);
+        }}>
           Reset
         </button>
       </div>
